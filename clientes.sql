@@ -4,18 +4,19 @@ USE conalmi;
 
 CREATE TABLE tipoid(
 tipoid VARCHAR(3),
-nombreid VARCHAR(40),
+numeroid VARCHAR(40),
 PRIMARY KEY (tipoid));
 
 CREATE TABLE clientes(
-id BIGINT,
+numeroid BIGINT,
 tipoid VARCHAR(3),
+contraseña VARCHAR(30),
 nombre VARCHAR(50),
 direccion VARCHAR(50),
 telefono INT,
 celular BIGINT,
 email VARCHAR(50),
-PRIMARY KEY(id,tipoid),
+PRIMARY KEY(numeroid,tipoid),
 FOREIGN KEY(tipoid) REFERENCES tipoid(tipoid)); 
 
 DESCRIBE clientes;
