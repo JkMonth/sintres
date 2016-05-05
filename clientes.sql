@@ -8,8 +8,8 @@ numeroid VARCHAR(40),
 PRIMARY KEY (tipoid));
 
 CREATE TABLE clientes(
-numeroid BIGINT,
 tipoid VARCHAR(3),
+numeroid BIGINT,
 contraseña VARCHAR(30),
 nombre VARCHAR(50),
 direccion VARCHAR(50),
