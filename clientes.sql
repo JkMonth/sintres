@@ -1,5 +1,4 @@
 CREATE DATABASE conalmi;
-SHOW DATABASES;
 USE conalmi;
 
 CREATE TABLE tipoid(
@@ -19,5 +18,7 @@ email VARCHAR(50),
 PRIMARY KEY(numeroid,tipoid),
 FOREIGN KEY(tipoid) REFERENCES tipoid(tipoid)); 
 
-DESCRIBE clientes;
-DESCRIBE tipoid;
+INSERT INTO tipoid VALUES("CC","CEDULA");
+INSERT INTO tipoid VALUES("NIT","NIT");
+INSERT INTO tipoid VALUES("CE","EXTRANJERIA");
+
