@@ -8,15 +8,11 @@
 	$celular=$_POST["cel"];
 	$email=$_POST["mail"];
 
-	error_reporting(E_COMPILE_ERROR|E_ERROR|E_CORE_ERROR);
-	$db=mysql_connect("localhost","root","");
-	mysql_select_db("conalmi",$db);
+	include "conexion.php";
 	$sql="insert into clientes values('$tipoid','$numeroid','$contraseña','$nombre','$direccion','$telefono','$celular','$email')";
 
 	$result=mysql_query($sql);
-	header('Location: registro.php');
-
-	 
+	//header('Location: registro.php');	 
 ?>
 
 	

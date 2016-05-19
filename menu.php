@@ -16,11 +16,11 @@
           <ul class="dropdown-menu">
             <li><a href="registro.php"><i class="fa fa-user-plus fa-fw"> </i> Registro </a></li>
             <li><a href="listar.php"><i class="fa fa-pencil-square-o fa-fw"></i> Listar</a></li>
-            <li><a href="Buscar.php"><i class="fa fa-search fa-fw"></i> Buscar</a></li>
+            <li><a href="buscar.php"><i class="fa fa-search fa-fw"></i> Buscar</a></li>
           </ul>
       </li> 
-      <li><a href="http://conalmi.co/wiki/doku.php"> <i class="fa fa-wikipedia-w fa-fw"> </i> WIKI </a></li>
-      <li><a href="http://conalmi.blogspot.com.co/"> <i class="fa fa-twitch fa-fw"> </i> BLOG </a> </li>
+      <li><a href="http://conalmi.co/wiki/doku.php" target="_blank"> <i class="fa fa-wikipedia-w fa-fw"> </i> WIKI </a></li>
+      <li><a href="http://conalmi.blogspot.com.co/" target="_blank"> <i class="fa fa-twitch fa-fw"> </i> BLOG </a> </li>
       <li>
         <a href="#" data-toggle="dropdown"><i class="fa fa-thumbs-o-up fa-fw"></i> REDES SOCIALES <span class="caret"></span></a> 
           <ul class="dropdown-menu">

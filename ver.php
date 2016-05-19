@@ -4,7 +4,7 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
-  <title> Listar en SINTRES</title>
+  <title> Mostrar en SINTRES</title>
 
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="favicon/icon1.ico">
@@ -27,12 +27,19 @@
         <br><br>
 
         <div class="col-md-12">
-          <h1><center>LISTAR</center></h1>
+          <h1><center>MOSTRAR</center></h1>
         </div>
 
         <div class="col-md-12">
-          <table class="table table-hover">
-            <tr  text-align="center" bgcolor="white">
+        	<?php
+						include "conexion.php";
+						$id=$_GET["id"];
+						$sql="select * from clientes where numeroid = $id";
+					 	$result = mysql_query($sql);	
+					 	$row = mysql_fetch_row($result);
+					?>
+        	 <table class="table table-hover">
+            <tr text-align="center" bgcolor="white">
                <td><strong> Tipo de identificacion</strong></td>
                <td><strong> Numero de identificacion</strong></td>
                <td><strong> Nombre</strong></td>
@@ -40,34 +47,17 @@
                <td><strong> Telefono</strong></td>
                <td><strong> Celular</strong></td>
                <td><strong> Email</strong></td>
-            </tr>
-              
-            <?php
-              include "conexion.php";
-              $sql ="select * from clientes";
-              $result = mysql_query($sql);
-            ?>  
-            <?php
-              while ($row = mysql_fetch_row($result)){ 
-            ?>
-
-                <tr>
-                  <td><?php echo $row[0] ?></td>
-                  <td>
-                    <a href="ver.php?id=<?php echo $row[1]; ?>">
-                      <?php echo $row[1] ?>
-                    </a>
-                  </td>
-                  <td><?php echo $row[2] ?></td>
-                  <td><?php echo $row[3] ?></td>
-                  <td><?php echo $row[4] ?></td>
-                  <td><?php echo $row[5] ?></td>
-                  <td><?php echo $row[6] ?></td>
-                </tr>         
-            <?php
-              } 
-            ?>
-          </table>
+              </tr>
+              <tr>
+                <td><?php echo $row[0]?></td>
+                <td><?php echo $row[1] ?></td>
+                <td><?php echo $row[2]?></td>
+                <td><?php echo $row[3] ?></td>
+                <td><?php echo $row[4] ?></td>
+                <td><?php echo $row[5] ?></td>
+                <td><?php echo $row[6]?></td>  
+              </tr>
+        	</table>
         </div>
 
         <div class="col-md-12" id="footer">

@@ -2241,7 +2241,7 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: #DFDDD5; /*FONDO A LA TABLA*/
 }
 caption {
   padding-top: 8px;

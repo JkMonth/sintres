@@ -1,6 +1,5 @@
 <?php
-  $db=mysql_connect("localhost","root","");
-  mysql_select_db("conalmi",$db);
+  include "conexion.php";
 
 
   if (empty($_POST["ti"])) {
@@ -47,9 +46,9 @@
 
         <br><br>
 
-        <div class="col-md-6">
+        <div class="col-md-12">
          <h1><center>Buscar</center></h1>
-          <hr>
+          <hr width="50%">
         	<form action="buscar.php" method="post">
             <div class="well">
               <div class="form-group">
@@ -71,11 +70,14 @@
         </form>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-12">
           <table class="table table-hover">
             <tr text-align="center" bgcolor="white">
-               <td><strong> Tipo de identificacion</strong></td>
-               <td><strong> Numero de identificacion</strong></td>
+               <td><strong> Nombre</strong></td>
+               <td><strong> Direccion</strong></td>
+               <td><strong> Telefono</strong></td>
+               <td><strong> Celular</strong></td>
+               <td><strong> Email</strong></td>
             </tr>
              
             <?php
@@ -83,8 +85,11 @@
             ?>
 
                 <tr>
-                  <td><?php echo $row[0] ?></td>
-                  <td><?php echo $row[1] ?></td>
+                  <td><?php echo $row[2] ?></td>
+                  <td><?php echo $row[3] ?></td>
+                  <td><?php echo $row[4] ?></td>
+                  <td><?php echo $row[5] ?></td>
+                  <td><?php echo $row[6] ?></td>
                 </tr>         
             <?php
               } 
