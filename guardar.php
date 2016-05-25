@@ -12,7 +12,7 @@
 	$sql="insert into clientes values('$tipoid','$numeroid','$contraseña','$nombre','$direccion','$telefono','$celular','$email')";
 
 	$result=mysql_query($sql);
-	//header('Location: registro.php');	 
+	header('Location: registro.php'); 
 ?>
 
 	

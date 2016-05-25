@@ -73,6 +73,9 @@
         <div class="col-md-12">
           <table class="table table-hover">
             <tr text-align="center" bgcolor="white">
+               <td><strong> Tipo de identificacion</strong></td>
+               <td><strong> Numero de identificacion</strong></td>
+               <td><strong> Contraseña</strong></td>
                <td><strong> Nombre</strong></td>
                <td><strong> Direccion</strong></td>
                <td><strong> Telefono</strong></td>
@@ -85,16 +88,23 @@
             ?>
 
                 <tr>
+                  <td><?php echo $row[0] ?></td>
+                  <td><?php echo $row[1] ?></td>
                   <td><?php echo $row[2] ?></td>
                   <td><?php echo $row[3] ?></td>
                   <td><?php echo $row[4] ?></td>
                   <td><?php echo $row[5] ?></td>
-                  <td><?php echo $row[6] ?></td>
+                  <td><?php echo $row[6]?></td>
+                  <td><?php echo $row[7]?></td>
                 </tr>         
             <?php
               } 
             ?>
           </table>
+        </div>
+
+        <div class="col-md-12">
+          
         </div>
 
         <div class="col-md-12" id="footer">

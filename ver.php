@@ -32,16 +32,17 @@
 
         <div class="col-md-12">
         	<?php
-						include "conexion.php";
-						$id=$_GET["id"];
-						$sql="select * from clientes where numeroid = $id";
-					 	$result = mysql_query($sql);	
-					 	$row = mysql_fetch_row($result);
-					?>
+            include "conexion.php";
+            $id=$_GET["id"];
+            $sql="select * from clientes where numeroid = $id";
+            $result = mysql_query($sql);  
+            $row = mysql_fetch_row($result);
+          ?>
         	 <table class="table table-hover">
             <tr text-align="center" bgcolor="white">
                <td><strong> Tipo de identificacion</strong></td>
                <td><strong> Numero de identificacion</strong></td>
+               <td><strong> Contraseña</strong></td>
                <td><strong> Nombre</strong></td>
                <td><strong> Direccion</strong></td>
                <td><strong> Telefono</strong></td>
@@ -49,15 +50,21 @@
                <td><strong> Email</strong></td>
               </tr>
               <tr>
-                <td><?php echo $row[0]?></td>
+                <td><?php echo $row[0] ?></td>
                 <td><?php echo $row[1] ?></td>
-                <td><?php echo $row[2]?></td>
+                <td><?php echo $row[2] ?></td>
                 <td><?php echo $row[3] ?></td>
                 <td><?php echo $row[4] ?></td>
                 <td><?php echo $row[5] ?></td>
-                <td><?php echo $row[6]?></td>  
+                <td><?php echo $row[6]?></td>
+                <td><?php echo $row[7]?></td>
               </tr>
         	</table>
+        </div>
+
+        <div class="col-md-6">
+          <a href="eliminar.php?id=<?php echo $row[0]; ?>">Eliminar</a> 
+          <button type="button" class="btn btn-success">Modificar</button>
         </div>
 
         <div class="col-md-12" id="footer">

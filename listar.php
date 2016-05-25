@@ -35,13 +35,14 @@
             <tr  text-align="center" bgcolor="white">
                <td><strong> Tipo de identificacion</strong></td>
                <td><strong> Numero de identificacion</strong></td>
+               <td><strong> Contraseña</strong></td>
                <td><strong> Nombre</strong></td>
                <td><strong> Direccion</strong></td>
                <td><strong> Telefono</strong></td>
                <td><strong> Celular</strong></td>
                <td><strong> Email</strong></td>
             </tr>
-              
+      
             <?php
               include "conexion.php";
               $sql ="select * from clientes";
@@ -58,11 +59,13 @@
                       <?php echo $row[1] ?>
                     </a>
                   </td>
-                  <td><?php echo $row[2] ?></td>
-                  <td><?php echo $row[3] ?></td>
-                  <td><?php echo $row[4] ?></td>
-                  <td><?php echo $row[5] ?></td>
-                  <td><?php echo $row[6] ?></td>
+                  <td><?php echo $row[2]?></td>
+                  <td><?php echo $row[3]?></td>
+                  <td><?php echo $row[4]?></td>
+                  <td><?php echo $row[5]?></td>
+                  <td><?php echo $row[6]?></td>
+                  <td><?php echo $row[7]?></td>
+              
                 </tr>         
             <?php
               } 
