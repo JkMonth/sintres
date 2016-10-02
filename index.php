@@ -18,7 +18,7 @@
 <div class="container">
   <div class="row">
       
-       <div class="col-md-12">
+       <div class="col-md-12 col-sm-12 col-xs-12">
          <?php
           include 'menu.php'
          ?>
@@ -26,7 +26,7 @@
 
       <br><br>
       
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-12 col-xs-12">
         <h1><center>INGRESAR</center></h1>
           <hr> 
             <form>
@@ -55,7 +55,7 @@
            </form>
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-8 col-sm-12 col-xs-12">
         <h1><center>BIENVENIDOS</center></h1>
           <hr>
           <center> <img  src= "imagenes/logo.png"  alt= "imagen Responsive"  class= "img-thumbnail"> </center>
@@ -63,13 +63,20 @@
           <p><strong>SINTRES</strong> (Sistema de información de trazabilidad de estibas) es un sistema de información que permite consultar la trazabilidad de las estibas y productos de embalajes en madera; a traves de este sistema buscamos informar a nuestros usuarios sobre el estado real de los procesos y fases que corresponden al diseño, producción y distribución de los productos solicitados.</p> 
       </div>
 
-      <div class="col-md-12" id="footer">
-        Diseñado y Administrado por: Aprendides SENA TGA Ficha 959480 &copy; 2016 | <a href="http:\\conalmi.co"><font color="#FFCD02">CONALMI S.A.S</font></a>
-      </div>
-
   </div>  
 </div>
 		
+    <footer class="text-right">
+      <div class="footer-below">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      Diseñado y Administrado por: Aprendides SENA TGA Ficha 959480 &copy; 2016 | <a href="http:\\conalmi.co"><font color="#FFCD02">CONALMI S.A.S</font></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
 
 </body>
 </html>

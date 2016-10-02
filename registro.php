@@ -18,7 +18,7 @@
 <div class="container">
   <div class="row">
       
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-12 col-xs-12">
        <?php
         include 'menu.php'
        ?>
@@ -26,7 +26,7 @@
 
       <br><br>
 
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <h1><center>REGISTRO</center></h1>
         <hr width="50%">             
           <form action="guardar.php" method="post">
@@ -68,13 +68,20 @@
         </form>
       </div>
 
-
-      <div class="col-md-12" id="footer">
-        Diseñado y Administrado por: Aprendides SENA TGA Ficha 959480 &copy; 2016 | <a href="http:\\conalmi.co"><font color="#FFCD02">CONALMI S.A.S</font></a>
-      </div>
-      
     </div>
 	</div>	
+    
+    <footer class="text-right">
+      <div class="footer-below">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      Diseñado y Administrado por: Aprendides SENA TGA Ficha 959480 &copy; 2016 | <a href="http:\\conalmi.co"><font color="#FFCD02">CONALMI S.A.S</font></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
     
 </body>
 </html>

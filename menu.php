@@ -1,12 +1,15 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navegation">
+
   <div class="container-fluid">
     <div class="navbar-header">
+
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
       <span class="sr-only">Desplegar navegación</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>  
+
      <a class="navbar-brand" href="index.php"><i class="fa fa-spinner fa-spin"></i> SINTRES </a>
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -35,8 +38,10 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a class="navbar-brand topnav" href="index.php"> <img src="imagenes/conalmi.png" width="120" height="25"> </a></li>
     </ul>
+
     </div>  
   </div>
+
 </nav>
 
 

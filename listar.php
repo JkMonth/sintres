@@ -18,7 +18,7 @@
   <div class="container">
     <div class="row">
         
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
          <?php
           include 'menu.php'
          ?>
@@ -26,11 +26,11 @@
 
         <br><br>
 
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <h1><center>LISTAR</center></h1>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <table class="table table-hover">
             <tr  text-align="center" bgcolor="white">
                <td><strong> Tipo de identificacion</strong></td>
@@ -41,6 +41,7 @@
                <td><strong> Telefono</strong></td>
                <td><strong> Celular</strong></td>
                <td><strong> Email</strong></td>
+               <td></td>
             </tr>
       
             <?php
@@ -65,7 +66,7 @@
                   <td><?php echo $row[5]?></td>
                   <td><?php echo $row[6]?></td>
                   <td><?php echo $row[7]?></td>
-              
+                  <td><a href="eliminar.php?id=<?php echo $row[1]; ?>">Eliminar</a></td>
                 </tr>         
             <?php
               } 
@@ -73,12 +74,20 @@
           </table>
         </div>
 
-        <div class="col-md-12" id="footer">
-          Diseñado y Administrado por: Aprendides SENA TGA Ficha 959480 &copy; 2016 | <a href="http:\\conalmi.co"><font color="#FFCD02">CONALMI S.A.S</font></a>
-        </div>
-
     </div>
    </div>   
-           
+   
+   <footer class="text-right">
+      <div class="footer-below">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      Diseñado y Administrado por: Aprendides SENA TGA Ficha 959480 &copy; 2016 | <a href="http:\\conalmi.co"><font color="#FFCD02">CONALMI S.A.S</font></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+            
 </body>
 </html>

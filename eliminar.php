@@ -1,12 +1,17 @@
 <?php
+
+  $a=$_GET["id"];
   include "conexion.php";
-  $id=$_GET["id"];
-  $sql="delate from clientes where numeroid = $id";
+
+  $sql="delete from clientes where numeroid = '$a'";
   $result = mysql_query($sql);  
-  if ($resul) {
-    header("Location: ver.php");
-    echo "Eliminado";    
+  
+  if ($result) {
+    header("Location: listar.php");
+    // echo "Eliminado";    
     }else{
     echo "Problemas";
-    }   
+    } 
+
 ?>
+
