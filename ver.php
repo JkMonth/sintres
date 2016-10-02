@@ -13,7 +13,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 </head>
-<body background="imagenes/fondo.png">
+<body background="imagenes/fondo.jpg">
 
   <div class="container">
     <div class="row">
@@ -58,6 +58,7 @@
                 <td><?php echo $row[5] ?></td>
                 <td><?php echo $row[6]?></td>
                 <td><?php echo $row[7]?></td>
+                <td><a href="editar.php?id=<?php echo $row[1]; ?>">Editar</a></td>
               </tr>
         	</table>
         </div>

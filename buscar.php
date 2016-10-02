@@ -33,7 +33,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 </head>
-<body background="imagenes/fondo.png">
+<body background="imagenes/fondo.jpg">
 
   <div class="container">
     <div class="row">

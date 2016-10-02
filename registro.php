@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
 
 </head>
-<body background="imagenes/fondo.png">
+<body background="imagenes/fondo.jpg">
 
 <div class="container">
   <div class="row">

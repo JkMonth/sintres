@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
 
 </head>
-<body background="imagenes/fondo.png">
+<body background="imagenes/fondo.jpg">
 
 <div class="container">
   <div class="row">
@@ -29,7 +29,7 @@
       <div class="col-md-4 col-sm-12 col-xs-12">
         <h1><center>INGRESAR</center></h1>
           <hr> 
-            <form>
+            <form action="validar.php" method="post">
               <div class="jk">
                 <div class="tamano">
                   <label>TIPO DE IDENTIDAD:</label>
@@ -47,8 +47,8 @@
                 <div class="tamano">
                   <input type="password" class="form-control" placeholder="Contraseña" name="con" required>
                 </div>
-  
-              <a href="administrador.php" type="submit" class="btn btn-warning btn-md" role="button">Entrar</a> 
+              <button type="submit" class="btn btn-warning btn-md">Entrar</button>
+              
                 <h3>¿Eres nuevo? <br> Registrate gratis</h3>
               <a href="registro.php" class="btn btn-warning btn-md" role="button" type="submit">Registrarme</a>            
             </div>
