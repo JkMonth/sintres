@@ -9,7 +9,7 @@ PRIMARY KEY (tipoid));
 CREATE TABLE clientes(
 tipoid VARCHAR(3),
 numeroid BIGINT,
-contrasena VARCHAR(30),
+contraseña VARCHAR(30),
 nombre VARCHAR(50),
 direccion VARCHAR(50),
 telefono INT,
@@ -18,8 +18,8 @@ email VARCHAR(50),
 PRIMARY KEY(numeroid,tipoid),
 FOREIGN KEY(tipoid) REFERENCES tipoid(tipoid)); 
 
-INSERT INTO tipoid VALUES("cc","cedula");
-INSERT INTO tipoid VALUES("nit","nit");
-INSERT INTO tipoid VALUES("ce","extranjeria");
+INSERT INTO tipoid VALUES("CC","CEDULA");
+INSERT INTO tipoid VALUES("NIT","NIT");
+INSERT INTO tipoid VALUES("CE","EXTRANJERIA");
 
 SELECT*FROM clientes;

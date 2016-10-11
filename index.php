@@ -29,15 +29,15 @@
       <div class="col-md-4 col-sm-12 col-xs-12">
         <h1><center>INGRESAR</center></h1>
           <hr> 
-            <form action="validar.php" method="post">
+            <form action="login.php" method="post">
               <div class="jk">
                 <div class="tamano">
                   <label>TIPO DE IDENTIDAD:</label>
                   <select type="Tipoid" class="form-control" name="ti">
                     <option select> Seleccione</option>
-                    <option> Cedula de Ciudadanía</option>
-                    <option> NIT </option>
-                    <option> Cedula de Extranjería </option>
+                    <option value="cc"> Cedula de Ciudadanía</option>
+                    <option value="nit"> NIT </option>
+                    <option value="ce"> Cedula de Extranjería </option>
                   </select> 
                 </div>
         
